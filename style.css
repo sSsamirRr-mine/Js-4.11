@@ -1,0 +1,99 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteiner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to left top, blue 10%, rgb(189, 0, 189) 70%);
+    gap: 40px;
+}
+
+button {
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+    font-size: 30px;
+    transform: rotate(90deg);
+    color: white;
+    background-image: linear-gradient(to right, yellow 5%, purple 95%);
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 60vw;
+    width: 80vw;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    zoom: 0.6;
+}
+
+.card {
+    color: white;
+    user-select: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background-image: linear-gradient(yellow 5%, purple 95%);
+    transition: 0.5s;
+    /* transform: rotateY(180deg); */
+    font-size: 30px;
+}
+
+.hidden {
+    transform: rotateY(180deg);
+    color: transparent;
+}
+/*
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, purple, blue);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(7, 60px);
+            gap: 10px;
+        }
+        .card {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(to bottom, yellow, brown);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            user-select: none;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        } */
